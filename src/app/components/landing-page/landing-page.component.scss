@@ -1,0 +1,47 @@
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 500px;
+  color: white;
+  text-align: center;
+
+  background-image: linear-gradient(
+      to top,
+      #121212ce,
+      #121212
+    ),
+    url("/assets/imgs/hero-img-0.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .header {
+    margin-bottom: 25px;
+  }
+
+  .tagline {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .btn-call-action {
+    margin-top: 25px;
+    button {
+      font-size: 15px;
+      color: #fff;
+      background-color: #121212;
+      padding: 10px 15px;
+      border: 1px solid #fff;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    button:hover {
+    }
+  }
+}
