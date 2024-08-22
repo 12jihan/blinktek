@@ -8,11 +8,7 @@
   color: white;
   text-align: center;
 
-  background-image: linear-gradient(
-      to top,
-      #121212ce,
-      #121212
-    ),
+  background-image: linear-gradient(to top, #121212ce, #121212),
     url("/assets/imgs/hero-img-0.png");
   background-attachment: fixed;
   background-position: center;
@@ -44,4 +40,22 @@
     button:hover {
     }
   }
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 25px;
+  width: 100%;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+  }
+}
+
+.content {
+  
 }
