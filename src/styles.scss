@@ -8,11 +8,24 @@ body {
 }
 
 html {
-  background-color:  #121212;
+  background-color: #121212;
 }
 
 h1 {
   font-size: 45px;
   font-weight: 500;
   margin: 0;
+}
+
+.bg-black {
+  background-color: #121212;
+}
+.bg-clear {
+  background-color: transparent;
+}
+.border-none {
+  border: none;
+}
+.border-white {
+  border: white;
 }

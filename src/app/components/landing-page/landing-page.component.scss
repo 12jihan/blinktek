@@ -16,24 +16,23 @@
   background-size: cover;
   background-position: center;
 
-  .header {
+  .header-container {
     margin-bottom: 25px;
   }
 
-  .tagline {
-    font-size: 22px;
-    font-weight: 300;
-  }
+  
 
   .btn-call-action {
-    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    justify-content: center;
+    margin-top: 50px;
+
     button {
       font-size: 15px;
       color: #fff;
-      background-color: #121212;
       padding: 10px 15px;
-      border: 1px solid #fff;
-      border-radius: 50px;
       cursor: pointer;
     }
 
@@ -48,8 +47,20 @@ section {
   justify-content: center;
   padding: 25px;
   width: 100%;
+  height: 100vh;
 
   .container {
+    .header {
+      font-size: 56px;
+      font-weight: 700;
+    }
+
+    .subheader {
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: 25px;
+    }
+
     display: flex;
     flex-direction: column;
     width: 750px;
@@ -57,5 +68,4 @@ section {
 }
 
 .content {
-  
 }
