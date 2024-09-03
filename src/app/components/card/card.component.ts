@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'bt-card',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-
+  @Input() header: string = 'Sample Header';
+  @Input() text: string = 'Sample Text';
+  @Input() photo_url: string = '/assets/imgs/placeholder.png';
 }
