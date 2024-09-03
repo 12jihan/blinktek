@@ -20,8 +20,6 @@
     margin-bottom: 25px;
   }
 
-  
-
   .btn-call-action {
     display: flex;
     flex-direction: row;
@@ -30,13 +28,10 @@
     margin-top: 50px;
 
     button {
-      font-size: 15px;
+      font-size: 16px;
       color: #fff;
       padding: 10px 15px;
       cursor: pointer;
-    }
-
-    button:hover {
     }
   }
 }
@@ -67,5 +62,23 @@ section {
   }
 }
 
-.content {
+.section-title {
+  color: white;
+}
+
+.section-description {
+  color: white;
+  line-height: 150%;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .card-body {
+    height: 200px;
+    width: 150px;
+    background-color: white;
+  }
 }
