@@ -1,7 +1,31 @@
 .wrapper {
+  color: white;
   width: 100%;
-  border: 2px solid black;
   height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid white;
   padding: 15px 25px;
 
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 15px 25px;
+  border: 2px solid white;
+  border-top: none;
 }

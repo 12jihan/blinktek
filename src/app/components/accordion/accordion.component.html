@@ -1,3 +1,10 @@
 <div class="wrapper">
   <p>This is a test</p>
+  <button (click)="open_close()">
+    <fa-icon [icon]="chevron_down"></fa-icon>
+  </button>
 </div>
+@if(this.opened) {
+<div class="container" #container>
+</div>
+}
