@@ -69,7 +69,9 @@ section {
 .container-flex {
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 1024px;
+  gap: 15px;
 }
 
 .container-full-center {

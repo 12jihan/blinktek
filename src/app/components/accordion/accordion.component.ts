@@ -1,4 +1,4 @@
-import { Component, ViewChild, ViewChildren } from '@angular/core';
+import { Component, Input, ViewChild, ViewChildren } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faFortAwesome, IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -13,6 +13,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './accordion.component.scss'
 })
 export class AccordionComponent {
+  @Input() text: string = 'Please add text'
   @ViewChild('container', { static: true }) content: ViewChildren | undefined = undefined;
   chevron_down: IconDefinition = faChevronDown;
   opened: boolean = false;

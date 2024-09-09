@@ -154,51 +154,13 @@
         services.
       </p>
     </div>
-    <div class="accordion-container">
-      <bt-accordion></bt-accordion>
-      <p>What services do you offer?</p>
-      <p>
-        We offer a wide range of tech consulting services, including software
-        development, IT infrastructure management, and cybersecurity
-        solutions.
-      </p>
-    </div>
-    <div class="">
-      <p>How can I contact you?</p>
-      <p>
-        You can reach out to us through our contact form on the website or by
-        calling our customer support hotline.
-      </p>
-    </div>
-    <div class="">
-      <p>Do you provide on-site support?</p>
-      <p>
-        Yes, we offer on-site support for certain projects and clients. Please
-        contact us for more information.
-      </p>
-    </div>
-    <div class="">
-      <p>What industries do you serve?</p>
-      <p>
-        We serve clients from various industries, including finance, healthcare,
-        e-commerce, and more.
-      </p>
-    </div>
-    <div class="">
-      <p>Can you help with data migration?</p>
-      <p>
-        Yes, we have expertise in data migration and can assist you in
-        seamlessly transferring your data to new systems.
-      </p>
-    </div>
-
-    <div>
-      <h3>Still have questions?</h3>
-      <p>Contact us for more information or to get started.</p>
-      <div class="btn-group">
-        <button>Contact</button>
-      </div>
-    </div>
+    <!-- <div class="accordion-container"> -->
+    <!-- </div> -->
+    @for(faq of faqs; track faq) {
+    <bt-accordion [text]="faq.question">
+      <p>{{ faq.answer }}</p>
+    </bt-accordion>
+    }
   </div>
 </section>
 

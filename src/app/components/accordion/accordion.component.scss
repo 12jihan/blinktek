@@ -1,3 +1,16 @@
+:host ::ng-deep {
+  color: brown;
+}
+
+.toggle-btn {
+  cursor: pointer;
+
+  &:hover {
+    color: black;
+    background-color: white;
+  }
+}
+
 .wrapper {
   color: white;
   width: 100%;
