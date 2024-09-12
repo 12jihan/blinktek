@@ -42,7 +42,7 @@ section {
   justify-content: center;
   padding: 112px 64px;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 // .section-half {
@@ -147,4 +147,10 @@ section {
   justify-content: center;
   align-items: center;
   gap: 24px;
+}
+
+.contact-group {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }

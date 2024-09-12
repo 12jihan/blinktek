@@ -1,14 +1,5 @@
 :host ::ng-deep {
-  color: brown;
-}
-
-.toggle-btn {
-  cursor: pointer;
-
-  &:hover {
-    color: black;
-    background-color: white;
-  }
+  color: white;
 }
 
 .wrapper {
@@ -22,14 +13,20 @@
   border: 2px solid white;
   padding: 15px 25px;
 
-  button {
-    background-color: transparent;
+  .btn-toggle {
     border: none;
     font-size: 20px;
     border: none;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 10px;
     cursor: pointer;
+    background-color: transparent;
+    border-radius: 100%;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
   }
 }
 
@@ -41,4 +38,8 @@
   padding: 15px 25px;
   border: 2px solid white;
   border-top: none;
+
+  p {
+    color: white;
+  }
 }

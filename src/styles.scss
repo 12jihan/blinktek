@@ -8,7 +8,7 @@ body {
 }
 
 html {
-  background-color: #121212;
+  background-color: #fff;
 }
 
 h1 {
@@ -23,7 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: white;
+  color: black;
   line-height: 120%;
   font-weight: 700;
   font-style: normal;
@@ -45,4 +45,12 @@ p {
 }
 .border-white {
   border: white;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-50 {
+  margin-top: 50px;
 }
