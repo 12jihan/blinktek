@@ -5,9 +5,10 @@
   align-items: center;
   height: 55px;
   padding: 0px 45px;
-  background-color: #222;
+  background-color: #22162b;
 
-  .right-group, .left-group {
+  .right-group,
+  .left-group {
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -26,8 +27,9 @@
         text-decoration: none;
         color: white;
       }
-      
+
     }
+
     .nav-item:hover {
       background-color: #6e4b9f;
     }
