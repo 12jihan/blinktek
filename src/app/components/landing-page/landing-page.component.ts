@@ -1,16 +1,28 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CardComponent } from "../card/card.component";
 import { ButtonComponent } from "../button/button.component";
 import { AccordionComponent } from '../accordion/accordion.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { icon, IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { faAddressBook, faCalendarCheck, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'bt-landing-page',
   standalone: true,
-  imports: [CardComponent, ButtonComponent, AccordionComponent],
+  imports: [
+    CardComponent,
+    ButtonComponent,
+    AccordionComponent,
+    FontAwesomeModule,
+  ],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss'
 })
-export class LandingPageComponent {
+export class LandingPageComponent implements OnInit {
+  public contact_icon: IconDefinition = faAddressBook;
+  public calendar_icon: IconDefinition = faCalendarCheck;
+  public plane_icon: IconDefinition = faPaperPlane;
+  
   public faqs: { question: string, answer: string }[] =
     [
       {
@@ -34,4 +46,9 @@ export class LandingPageComponent {
         answer: 'Yes, we have expertise in data migration and can assist you in seamlessly transferring your data to new systems.'
       },
     ];
+
+  
+  ngOnInit(): void {
+      
+  }
 }

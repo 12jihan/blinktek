@@ -125,9 +125,15 @@ section {
   text-align: center;
   gap: 24px;
   max-width: 768px;
-  // margin: auto;
   margin-right: auto;
   margin-left: auto;
+
+  h1 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
 }
 
 .btn-group-left {

@@ -32,17 +32,21 @@ h6 {
 p {
   font-size: 18px;
   line-height: 150%;
+  color: black;
 }
 
 .bg-black {
   background-color: #121212;
 }
+
 .bg-clear {
   background-color: transparent;
 }
+
 .border-none {
   border: none;
 }
+
 .border-white {
   border: white;
 }
@@ -53,4 +57,8 @@ p {
 
 .mt-50 {
   margin-top: 50px;
+}
+
+button {
+  cursor: pointer;
 }

@@ -1,1 +1,4 @@
-<button>{{ this.text }}</button>
+<button (click)="this.invoke_action()" [ngClass]="{
+    'white': this.color === 'white',
+    'black': this.color === 'black',
+}">{{ this.text }}</button>
