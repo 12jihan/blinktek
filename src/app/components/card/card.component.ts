@@ -12,8 +12,10 @@ export class CardComponent implements OnInit, AfterContentInit {
   @Input() header: string = 'Sample Header';
   @Input() text: string = 'Sample Text';
   @Input() photo_url: string = '/assets/imgs/placeholder.png';
+  @Input() card_layout: 'horizontal' | 'vertical' = 'horizontal';
 
   ngOnInit(): void {
+
   }
 
   ngAfterContentInit(): void {
