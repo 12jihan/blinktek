@@ -4,13 +4,12 @@ import { faFortAwesome, IconDefinition } from '@fortawesome/free-brands-svg-icon
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'bt-accordion',
-  standalone: true,
-  imports: [
-    FontAwesomeModule
-  ],
-  templateUrl: './accordion.component.html',
-  styleUrl: './accordion.component.scss'
+    selector: 'bt-accordion',
+    imports: [
+        FontAwesomeModule
+    ],
+    templateUrl: './accordion.component.html',
+    styleUrl: './accordion.component.scss'
 })
 export class AccordionComponent {
   @Input() text: string = 'Please add text'

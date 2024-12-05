@@ -2,13 +2,12 @@ import { Component } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'bt-navbar',
-  standalone: true,
-  imports: [
-    RouterLink
-  ],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+    selector: 'bt-navbar',
+    imports: [
+        RouterLink
+    ],
+    templateUrl: './navbar.component.html',
+    styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
   paths = [

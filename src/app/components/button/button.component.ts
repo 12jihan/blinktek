@@ -2,13 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'bt-button',
-  standalone: true,
-  imports: [
-    CommonModule
-  ],
-  templateUrl: './button.component.html',
-  styleUrl: './button.component.scss'
+    selector: 'bt-button',
+    imports: [
+        CommonModule
+    ],
+    templateUrl: './button.component.html',
+    styleUrl: './button.component.scss'
 })
 export class ButtonComponent implements OnInit {
   @Input() action: (() => void) | undefined = undefined;

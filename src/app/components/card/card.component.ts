@@ -2,11 +2,10 @@ import { AfterContentInit, AfterViewInit, Component, ContentChildren, ElementRef
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 
 @Component({
-  selector: 'bt-card',
-  standalone: true,
-  imports: [],
-  templateUrl: './card.component.html',
-  styleUrl: './card.component.scss'
+    selector: 'bt-card',
+    imports: [],
+    templateUrl: './card.component.html',
+    styleUrl: './card.component.scss'
 })
 export class CardComponent implements OnInit, AfterContentInit {
   @Input() header: string = 'Sample Header';
