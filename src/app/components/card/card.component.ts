@@ -2,16 +2,16 @@ import { AfterContentInit, AfterViewInit, Component, ContentChildren, ElementRef
 import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 
 @Component({
-    selector: 'bt-card',
-    imports: [],
-    templateUrl: './card.component.html',
-    styleUrl: './card.component.scss'
+  selector: 'bt-card',
+  imports: [],
+  templateUrl: './card.component.html',
+  styleUrl: './card.component.scss'
 })
 export class CardComponent implements OnInit, AfterContentInit {
   @Input() header: string = 'Sample Header';
   @Input() text: string = 'Sample Text';
   @Input() photo_url: string = '/assets/imgs/placeholder.png';
-  @Input() card_layout: 'horizontal' | 'vertical' = 'horizontal';
+  @Input() layout: 'horizontal' | 'vertical' | 'no-borders' = 'horizontal';
 
   ngOnInit(): void {
 

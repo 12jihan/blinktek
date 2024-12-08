@@ -1,6 +1,6 @@
-@switch (card_layout) {
+@switch (layout) {
 @case ("vertical") {
-<div class="card-container-v">
+<div class="card-container card-v">
   <img [src]="photo_url" />
   <h4 class="card-header">{{ this.header }}</h4>
   <p class="card-text">{{ this.text }}</p>
@@ -8,10 +8,20 @@
 }
 
 @case ("horizontal") {
-<div class="card-container-v">
+<div class="card-container card-h">
   <img [src]="photo_url" />
   <h4 class="card-header">{{ this.header }}</h4>
   <p class="card-text">{{ this.text }}</p>
+</div>
+}
+
+@case ("no-borders") {
+<div class="card-nb">
+  <img [src]="photo_url" />
+  <div>
+    <h4 class="card-header">{{ this.header }}</h4>
+    <p class="card-text">{{ this.text }}</p>
+  </div>
 </div>
 }
 }
