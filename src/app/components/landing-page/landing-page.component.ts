@@ -5,6 +5,7 @@ import { AccordionComponent } from '../accordion/accordion.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { icon, IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faAddressBook, faCalendarCheck, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import { faAmazon, faAngular, faGoogle, faMicrosoft, faReact } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'bt-landing-page',
@@ -22,6 +23,29 @@ export class LandingPageComponent implements OnInit {
   public contact_icon: IconDefinition = faAddressBook;
   public calendar_icon: IconDefinition = faCalendarCheck;
   public plane_icon: IconDefinition = faPaperPlane;
+
+  public tools: any[] = [
+    {
+      name: 'Azure',
+      icon: faMicrosoft
+    },
+    {
+      name: 'AWS',
+      icon: faAmazon
+    },
+    {
+      name: 'GCP',
+      icon: faGoogle
+    },
+    {
+      name: 'Angular',
+      icon: faAngular
+    },
+    {
+      name: 'React',
+      icon: faReact
+    },
+  ];
 
   public faqs: { question: string, answer: string }[] =
     [
