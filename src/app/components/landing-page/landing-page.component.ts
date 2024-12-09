@@ -7,21 +7,22 @@ import { icon, IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faAddressBook, faCalendarCheck, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-    selector: 'bt-landing-page',
-    imports: [
-        CardComponent,
-        ButtonComponent,
-        AccordionComponent,
-        FontAwesomeModule,
-    ],
-    templateUrl: './landing-page.component.html',
-    styleUrl: './landing-page.component.scss'
+  selector: 'bt-landing-page',
+  imports: [
+    CardComponent,
+    ButtonComponent,
+    // AccordionComponent,
+    FontAwesomeModule,
+  ],
+  templateUrl: './landing-page.component.html',
+  styleUrl: './landing-page.component.scss'
 })
 export class LandingPageComponent implements OnInit {
+  public current_year: number = new Date().getFullYear();
   public contact_icon: IconDefinition = faAddressBook;
   public calendar_icon: IconDefinition = faCalendarCheck;
   public plane_icon: IconDefinition = faPaperPlane;
-  
+
   public faqs: { question: string, answer: string }[] =
     [
       {
@@ -46,8 +47,8 @@ export class LandingPageComponent implements OnInit {
       },
     ];
 
-  
+
   ngOnInit(): void {
-      
+
   }
 }
