@@ -47,13 +47,13 @@
     </div>
 
     <div class="card-container">
-      <bt-card header="Initial Contact" photo_url="/assets/imgs/phone-contact.gif"
+      <bt-card header="Initial Contact" photo_url="/assets/imgs/phone-contact.gif" layout="vertical"
         text="Get in touch with us to discuss your needs and goals.">
       </bt-card>
-      <bt-card header="Project Planning" photo_url="/assets/imgs/to-do-list.gif"
+      <bt-card header="Project Planning" photo_url="/assets/imgs/to-do-list.gif" layout="vertical"
         text="We work closely with you to develop a comprehensive project plan.">
       </bt-card>
-      <bt-card header="Execution & Delivery" photo_url="/assets/imgs/delivery-truck.gif"
+      <bt-card header="Execution & Delivery" photo_url="/assets/imgs/delivery-truck.gif" layout="vertical"
         text="Our team of experts brings your project to life and ensures timely delivery.">
       </bt-card>
     </div>
@@ -87,11 +87,12 @@
     </div>
 
     <div class="card-container">
-      <bt-card header="Software Development"
+      <bt-card [photo]="false" layout="vertical" header="Software Development"
         text="We create custom software solutions tailored to your business needs."></bt-card>
-      <bt-card header="IT Consulting"
+      <bt-card [photo]="false" layout="vertical" header="IT Consulting"
         text="Our team provides expert guidance and support to optimize your IT infrastructure."></bt-card>
-      <bt-card header="Digital Marketing" text="Strategies to boost your online presence and drive growth."></bt-card>
+      <bt-card [photo]="false" layout="vertical" header="Digital Marketing"
+        text="Strategies to boost your online presence and drive growth."></bt-card>
     </div>
 
     <div class="btn-group-middle">

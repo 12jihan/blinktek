@@ -10,6 +10,7 @@ import { FaIconComponent } from '@fortawesome/angular-fontawesome';
 export class CardComponent implements OnInit, AfterContentInit {
   @Input() header: string = 'Sample Header';
   @Input() text: string = 'Sample Text';
+  @Input() photo: boolean = true;
   @Input() photo_url: string = '/assets/imgs/placeholder.png';
   @Input() layout: 'horizontal' | 'vertical' | 'no-borders' = 'horizontal';
 

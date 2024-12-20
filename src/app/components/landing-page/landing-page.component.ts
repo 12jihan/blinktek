@@ -24,7 +24,7 @@ export class LandingPageComponent implements OnInit {
   public calendar_icon: IconDefinition = faCalendarCheck;
   public plane_icon: IconDefinition = faPaperPlane;
 
-  public tools: any[] = [
+  public tools: { name: string, icon: IconDefinition }[] = [
     {
       name: 'Azure',
       icon: faMicrosoft

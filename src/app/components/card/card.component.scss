@@ -11,6 +11,20 @@
   padding: 25px;
 }
 
+.card-h {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+}
+
+.card-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
 .card-nb {
   display: flex;
   flex-direction: row;
